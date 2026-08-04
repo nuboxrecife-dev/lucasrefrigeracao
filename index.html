@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Refrigeração | Climatização, Manutenção & PMOC</title>
+    <meta name="description" content="Especialista em instalação, higienização, manutenção de ar-condicionado e PMOC em Mogi das Cruzes, São Paulo e região. Atendimento rápido e profissional.">
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#home" class="logo">
+                <img src="assets/logooficial.png" alt="Lucas Refrigeração Logo" class="logo-img">
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-nav-toggle" aria-label="Abrir menu" id="mobileToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Início</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#calculadora" class="nav-link">Calculadora BTU</a>
+                <a href="#beneficios" class="nav-link">Benefícios</a>
+                <a href="#pmoc" class="nav-link">PMOC</a>
+                <a href="#agendar" class="nav-link">Agendamento</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#agendar" class="btn btn-primary btn-header">Orçamento Rápido</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero & Slideshow Section -->
+    <section id="home" class="hero-section">
+        <!-- Floating glass background cards for tech vibe -->
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge">❄️ Especialista em Climatização</div>
+                <h1>Climatização Perfeita para seu <span>Conforto</span> e Saúde</h1>
+                <p class="hero-description">
+                    Instalação estética, higienização profunda e manutenção preventiva de ar-condicionado. Atendimento profissional especializado em Mogi das Cruzes, São Paulo e região.
+                </p>
+                <div class="hero-actions">
+                    <a href="#agendar" class="btn btn-primary">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        Agendar Atendimento
+                    </a>
+                    <a href="https://wa.me/5511961778917" target="_blank" class="btn btn-secondary">
+                        <svg class="btn-icon color-whatsapp" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.456L0 24zm5.835-3.266c1.62.96 3.21 1.46 4.937 1.465 5.4 0 9.794-4.386 9.797-9.789.002-2.618-1.012-5.08-2.859-6.93C15.878 3.63 13.415 2.612 10.8 2.613c-5.4 0-9.796 4.388-9.8 9.792-.001 1.83.498 3.62 1.448 5.178l-.988 3.613 3.732-.977zm11.758-6.868c-.302-.15-.1.44-.752-.777-.315-.559-.648-.605-.94-.617-.234-.01-.502-.01-.77-.01-.268 0-.704.1-1.072.5-.368.4-1.407 1.378-1.407 3.36 0 1.98 1.44 3.896 1.64 4.168.2.27 2.83 4.324 6.858 6.066.958.414 1.706.662 2.29.847 1.01.32 1.93.275 2.657.168.812-.12 2.502-1.023 2.85-2.01.348-.988.348-1.834.243-2.01-.105-.177-.388-.277-.69-.427z"/>
+                        </svg>
+                        Falar no WhatsApp
+                    </a>
+                </div>
+
+                <!-- Core highlights floating -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Garantia Estética</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Mogi/SP</span>
+                        <span class="stat-label">Atendimento Local</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">PMOC</span>
+                        <span class="stat-label">Apto para Empresas</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modern Interactive Slideshow -->
+            <div class="hero-slider-container">
+                <div class="slider-wrapper" id="sliderWrapper">
+                    <!-- Slide 1 -->
+                    <div class="slide active">
+                        <img src="assets/slide_living_room.png" alt="Sala de estar climatizada pela Lucas Refrigeração">
+                        <div class="slide-caption">
+                            <h3>Conforto Térmico</h3>
+                            <p>Instalações impecáveis que valorizam o seu ambiente doméstico.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <img src="assets/slide_technician.png" alt="Técnico higienizando ar-condicionado">
+                        <div class="slide-caption">
+                            <h3>Saúde & Proteção</h3>
+                            <p>Higienização profunda eliminando 99.9% de fungos e bactérias.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <img src="assets/slide_office.png" alt="Escritório corporativo climatizado">
+                        <div class="slide-caption">
+                            <h3>Eficiência Comercial</h3>
+                            <p>Manutenções preventivas e PMOC de acordo com as normas da ANVISA.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide Navigation -->
+                <button class="slider-btn prev-btn" id="prevBtn" aria-label="Slide anterior">&#10094;</button>
+                <button class="slider-btn next-btn" id="nextBtn" aria-label="Próximo slide">&#10095;</button>
+
+                <!-- Navigation Dots -->
+                <div class="slider-dots" id="sliderDots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle">Nossos Serviços</span>
+                <h2>Soluções Completas em Climatização</h2>
+                <div class="accent-line"></div>
+                <p class="section-desc">
+                    Trabalhamos com todas as marcas e modelos de ar-condicionado (Split, Cassete, Multi-Split, Piso-Teto). Equipe técnica certificada para garantir alta performance.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 7h-9L9 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path>
+                            <line x1="12" y1="11" x2="12" y2="17"></line>
+                            <line x1="9" y1="14" x2="15" y2="14"></line>
+                        </svg>
+                    </div>
+                    <h3>Instalação Estética & Segura</h3>
+                    <p>Planejamento de carga térmica, furação perfeita, tubulação embutida ou canalizada de forma estética e fixação firme conforme o manual do fabricante.</p>
+                    <ul class="card-features">
+                        <li>Furo cirúrgico na parede</li>
+                        <li>Infraestrutura de cobre embutida</li>
+                        <li>Garantia do fabricante mantida</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            <path d="M2 12h20"></path>
+                        </svg>
+                    </div>
+                    <h3>Higienização Completa</h3>
+                    <p>Limpeza profunda com aplicação de produtos bactericidas e fungicidas regulamentados pela ANVISA no evaporador, turbina, bandeja de dreno e filtros.</p>
+                    <ul class="card-features">
+                        <li>Combate a fungos e ácaros</li>
+                        <li>Eliminação de mau odor</li>
+                        <li>Aumento no fluxo de vento fresco</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                    </div>
+                    <h3>Manutenção & Carga de Gás</h3>
+                    <p>Diagnóstico de falhas mecânicas ou elétricas, conserto de vazamentos, reposição de fluido refrigerante (gás R410a, R22, R32) e troca de compressores.</p>
+                    <ul class="card-features">
+                        <li>Detecção rápida de vazamentos</li>
+                        <li>Apenas peças de alta qualidade</li>
+                        <li>Testes de pressão e vácuo</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <h3>PMOC para Empresas</h3>
+                    <p>Criação e execução do Plano de Manutenção, Operação e Controle exigido por lei para ambientes públicos e comerciais com carga térmica elevada.</p>
+                    <ul class="card-features">
+                        <li>Adequação à Lei Federal 13.589/18</li>
+                        <li>Laudo de engenheiro qualificado</li>
+                        <li>Evita multas fiscais pesadas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive BTU Calculator -->
+    <section id="calculadora" class="calculator-section">
+        <div class="section-container">
+            <div class="calculator-box">
+                <div class="calc-info">
+                    <span class="section-subtitle">Ferramenta Exclusiva</span>
+                    <h2>Calculadora Inteligente de BTUs</h2>
+                    <p>
+                        Não compre o ar-condicionado errado! Insira os dados do seu ambiente e descubra a potência térmica recomendada para garantir máxima eficiência e economia de energia.
+                    </p>
+                    <div class="calc-tips">
+                        <div class="tip-item">
+                            <span class="tip-dot"></span>
+                            <span><strong>Subdimensionado:</strong> O aparelho trabalha forçado, gasta mais luz e não gela o ambiente.</span>
+                        </div>
+                        <div class="tip-item">
+                            <span class="tip-dot"></span>
+                            <span><strong>Superdimensionado:</strong> Desperdício no preço de compra e ruído excessivo desnecessário.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calc-card">
+                    <h3>Calcular Potência Ideal</h3>
+                    <div class="calc-form">
+                        <div class="form-group">
+                            <label for="area">Área do Ambiente (m²)</label>
+                            <input type="number" id="area" placeholder="Ex: 15" min="1" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="sun">Exposição ao Sol</label>
+                            <select id="sun">
+                                <option value="morning">Manhã (Pouco sol)</option>
+                                <option value="afternoon">Tarde ou Dia Inteiro (Sol forte)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="people">Quantidade de Pessoas</label>
+                            <input type="number" id="people" value="1" min="1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="appliances">Eletrônicos/Lâmpadas Ligadas</label>
+                            <input type="number" id="appliances" value="0" min="0" required>
+                        </div>
+
+                        <button type="button" class="btn btn-primary w-100" id="btnCalculate">Calcular BTUs</button>
+
+                        <div class="calc-result" id="calcResult" style="display: none;">
+                            <div class="result-title">Potência Recomendada</div>
+                            <div class="result-value" id="btuValue">0 BTUs</div>
+                            <p class="result-desc" id="btuSuggestion">Recomendamos um aparelho Split Inverter para maior economia de eletricidade.</p>
+                            <button type="button" class="btn btn-secondary w-100" id="btnApplyBtu">Solicitar Orçamento deste Tamanho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Clean? Suggestions/Benefits -->
+    <section id="beneficios" class="benefits-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle">Por que Higienizar?</span>
+                <h2>Benefícios de um Ar-Condicionado Limpo</h2>
+                <div class="accent-line"></div>
+                <p class="section-desc">
+                    A manutenção preventiva não é apenas estética. Ela impacta diretamente o seu bolso, a vida útil do aparelho e a saúde de quem frequenta o local.
+                </p>
+            </div>
+
+            <div class="benefits-grid">
+                <!-- Benefit 1 -->
+                <div class="benefit-item">
+                    <div class="benefit-icon-box bg-cyan">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                            <line x1="1" y1="10" x2="23" y2="10"></line>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Até 40% de Economia de Energia</h3>
+                        <p>Filtros e turbinas sujas obstruem a saída do ar, fazendo com que o compressor trabalhe no limite e gaste muito mais luz para atingir a temperatura desejada.</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="benefit-item">
+                    <div class="benefit-icon-box bg-blue">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Prevenção de Crises Alérgicas</h3>
+                        <p>O interior úmido do ar-condicionado é o criadouro perfeito para ácaros, bactérias e fungos. A limpeza elimina esses agentes e reduz rinite e asma.</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="benefit-item">
+                    <div class="benefit-icon-box bg-purple">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Prolongamento da Vida Útil</h3>
+                        <p>Evite a queima prematura do compressor e pane nas placas eletrônicas devido a superaquecimento e acúmulo de poeira nas bobinas externas.</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="benefit-item">
+                    <div class="benefit-icon-box bg-green">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Resfriamento Rápido e Silencioso</h3>
+                        <p>Aparelhos higienizados operam com fluxo livre, alcançando a temperatura desejada em minutos e operando de forma extremamente silenciosa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PMOC Corporate Focus Section -->
+    <section id="pmoc" class="pmoc-banner-section">
+        <div class="section-container pmoc-banner-container">
+            <div class="pmoc-badge">Lei Federal 13.589/18</div>
+            <h2>Sua Empresa em Conformidade Legal com o PMOC</h2>
+            <p>
+                Evite multas de vigilância sanitária que podem ultrapassar R$ 20.000,00. Elaboramos o Plano de Manutenção, Operação e Controle com engenheiro responsável técnico para comércios, clínicas, indústrias e escritórios.
+            </p>
+            <div class="pmoc-action">
+                <a href="#agendar" class="btn btn-primary" id="pmocBtnLink">Consultar PMOC Gratuitamente</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Client Proof -->
+    <section id="depoimentos" class="testimonials-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle">Clientes Satisfeitos</span>
+                <h2>Quem Contrata, Recomenda</h2>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "O Lucas fez a instalação de dois aparelhos inverter no meu apartamento. Serviço extremamente limpo, caprichoso e capilar. A tubulação ficou perfeitamente escondida. Recomendo muito!"
+                    </p>
+                    <div class="client-info">
+                        <strong>Rodrigo Santos</strong>
+                        <span>Mogi das Cruzes - SP</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Estávamos com problemas de mau cheiro no ar do escritório. O pessoal da Lucas Refrigeração fez uma higienização química profunda e agora o ar parece novo. Também assinamos o contrato de PMOC com eles."
+                    </p>
+                    <div class="client-info">
+                        <strong>Mariana Costa</strong>
+                        <span>Gerente Comercial - SP</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Atendimento super rápido. Liguei de manhã devido a um vazamento de água e falta de gás, e na mesma tarde o técnico resolveu tudo. Preço justo e muito profissionalismo."
+                    </p>
+                    <div class="client-info">
+                        <strong>Felipe Almeida</strong>
+                        <span>Suzano - SP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment & Quote Interactive Form -->
+    <section id="agendar" class="booking-section">
+        <div class="section-container">
+            <div class="booking-box">
+                <div class="booking-header">
+                    <span class="section-subtitle">Rápido & Prático</span>
+                    <h2>Agende seu Atendimento</h2>
+                    <p>
+                        Preencha os campos abaixo e nosso sistema formatará seu orçamento instantaneamente para o WhatsApp, agilizando seu agendamento em menos de 1 minuto!
+                    </p>
+                </div>
+
+                <!-- Step-by-step Interactive Form Card -->
+                <div class="booking-card">
+                    <!-- Progress Bar -->
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="progressBar"></div>
+                        <div class="steps-indicators">
+                            <span class="step-indicator active" data-step-indicator="1">1</span>
+                            <span class="step-indicator" data-step-indicator="2">2</span>
+                            <span class="step-indicator" data-step-indicator="3">3</span>
+                        </div>
+                    </div>
+
+                    <form id="bookingForm">
+                        <!-- Step 1: Service selection -->
+                        <div class="form-step active" data-step="1">
+                            <h3>Qual serviço você precisa?</h3>
+                            <div class="service-selector">
+                                <label class="service-option active">
+                                    <input type="radio" name="serviceType" value="Instalação" checked>
+                                    <span class="option-icon">🔧</span>
+                                    <span class="option-title">Instalação</span>
+                                    <span class="option-desc">Aparelho novo ou mudança de local</span>
+                                </label>
+                                <label class="service-option">
+                                    <input type="radio" name="serviceType" value="Higienização">
+                                    <span class="option-icon">🧼</span>
+                                    <span class="option-title">Higienização</span>
+                                    <span class="option-desc">Limpeza profunda e combate a ácaros</span>
+                                </label>
+                                <label class="service-option">
+                                    <input type="radio" name="serviceType" value="Manutenção Corretiva">
+                                    <span class="option-icon">⚙️</span>
+                                    <span class="option-title">Manutenção</span>
+                                    <span class="option-desc">Ar parou de gelar ou vazando água</span>
+                                </label>
+                                <label class="service-option">
+                                    <input type="radio" name="serviceType" value="PMOC Comercial">
+                                    <span class="option-icon">📊</span>
+                                    <span class="option-title">PMOC</span>
+                                    <span class="option-desc">Plano de manutenção corporativo</span>
+                                </label>
+                            </div>
+                            <div class="step-actions">
+                                <button type="button" class="btn btn-primary btn-next">Continuar</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Location & Machine Details -->
+                        <div class="form-step" data-step="2">
+                            <h3>Informações sobre o aparelho</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="btuPower">Potência Estimada (BTUs)</label>
+                                    <select id="btuPower" name="btuPower">
+                                        <option value="Não sei informar">Não sei informar</option>
+                                        <option value="9.000 BTUs">9.000 BTUs</option>
+                                        <option value="12.000 BTUs">12.000 BTUs</option>
+                                        <option value="18.000 BTUs">18.000 BTUs</option>
+                                        <option value="24.000 BTUs">24.000 BTUs</option>
+                                        <option value="30.000 BTUs ou mais">30.000 BTUs ou mais</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="machineType">Tipo do Aparelho</label>
+                                    <select id="machineType" name="machineType">
+                                        <option value="Split Wall (Parede)">Split Tradicional</option>
+                                        <option value="Cassete">Cassete (Embutido Teto)</option>
+                                        <option value="Piso Teto">Piso Teto</option>
+                                        <option value="Portátil / Janela">Janela / Portátil</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-span-2">
+                                    <label for="bairro">Bairro / Cidade do Atendimento</label>
+                                    <input type="text" id="bairro" name="bairro" placeholder="Ex: Centro - Mogi das Cruzes" required>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button type="button" class="btn btn-secondary btn-prev">Voltar</button>
+                                <button type="button" class="btn btn-primary btn-next">Continuar</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Contact & Send -->
+                        <div class="form-step" data-step="3">
+                            <h3>Seus Dados de Contato</h3>
+                            <div class="form-grid">
+                                <div class="form-group col-span-2">
+                                    <label for="clientName">Seu Nome Completo</label>
+                                    <input type="text" id="clientName" name="clientName" placeholder="Ex: Lucas Ferreira" required>
+                                </div>
+                                <div class="form-group col-span-2">
+                                    <label for="clientPhone">WhatsApp para Retorno</label>
+                                    <input type="tel" id="clientPhone" name="clientPhone" placeholder="Ex: (11) 99999-9999" required>
+                                </div>
+                                <div class="form-group col-span-2">
+                                    <label for="observations">Observações Adicionais (Opcional)</label>
+                                    <textarea id="observations" name="observations" rows="3" placeholder="Ex: O ar condicionado faz barulho ao ligar."></textarea>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button type="button" class="btn btn-secondary btn-prev">Voltar</button>
+                                <button type="submit" class="btn btn-primary" id="btnSubmitForm">
+                                    Enviar para WhatsApp
+                                    <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle">Dúvidas Frequentes</span>
+                <h2>Respostas Rápidas</h2>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="faq-list">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>De quanto em quanto tempo devo higienizar meu ar-condicionado?</span>
+                        <span class="faq-toggle-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Para residências, recomendamos a higienização química profunda a cada 6 meses (ou 1 ano no máximo para aparelhos de pouco uso). Para escritórios, comércios e clínicas, devido à circulação constante de pessoas, a limpeza deve ser realizada mensalmente ou trimestralmente.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Vocês cobram taxa para fazer orçamento no local?</span>
+                        <span class="faq-toggle-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Para a região de Mogi das Cruzes, nós fazemos visitas técnicas para orçamentos sem cobrar taxas na maioria dos casos residenciais convencionais. Para outras cidades próximas ou projetos corporativos complexos, consulte com nossa equipe técnica via WhatsApp.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>O que é o PMOC e minha empresa é obrigada a ter?</span>
+                        <span class="faq-toggle-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O PMOC (Plano de Manutenção, Operação e Controle) é uma exigência da Lei Federal 13.589/2018. Qualquer estabelecimento comercial, público ou corporativo que possua sistemas de climatização com capacidade total acima de 60.000 BTUs é obrigado por lei a ter um PMOC assinado por responsável técnico habilitado, visando garantir a qualidade do ar.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Com quais marcas de ar-condicionado vocês trabalham?</span>
+                        <span class="faq-toggle-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Trabalhamos com absolutamente todas as marcas do mercado nacional e importado. Isso inclui Daikin, LG, Samsung, Fujitsu, Midea, Carrier, Springer, Gree, Elgin, Consul e Philco. Mantemos a garantia original de fábrica em instalações de aparelhos novos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <img src="assets/logooficial.png" alt="Lucas Refrigeração Logo" class="logo-img">
+                </a>
+                <p>
+                    Climatização inteligente e profissional. Segurança, eficiência e bem-estar para sua família ou empresa.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/lucasrefrigeracaobr" target="_blank" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Atalhos</h4>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#servicos">Nossos Serviços</a></li>
+                    <li><a href="#calculadora">Calculadora BTU</a></li>
+                    <li><a href="#pmoc">Plano PMOC</a></li>
+                    <li><a href="#agendar">Orçamento</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contatos</h4>
+                <ul>
+                    <li>
+                        <span class="contact-icon">📍</span>
+                        <span>Mogi das Cruzes, SP e Região</span>
+                    </li>
+                    <li>
+                        <span class="contact-icon">📞</span>
+                        <a href="tel:+5511961778917">(11) 96177-8917</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon">📞</span>
+                        <a href="tel:+5511989375809">(11) 98937-5809</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon">⏰</span>
+                        <span>Seg a Sex: 08h às 18h<br>Sáb: 08h às 13h</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="section-container footer-bottom-container">
+                <p>&copy; 2026 Lucas Refrigeração. Todos os direitos reservados.</p>
+                <p>Criado com excelência profissional.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Pulse WhatsApp Button -->
+    <a href="https://wa.me/5511961778917" target="_blank" class="whatsapp-float" aria-label="Falar no WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.456L0 24zm5.835-3.266c1.62.96 3.21 1.46 4.937 1.465 5.4 0 9.794-4.386 9.797-9.789.002-2.618-1.012-5.08-2.859-6.93C15.878 3.63 13.415 2.612 10.8 2.613c-5.4 0-9.796 4.388-9.8 9.792-.001 1.83.498 3.62 1.448 5.178l-.988 3.613 3.732-.977zm11.758-6.868c-.302-.15-.1.44-.752-.777-.315-.559-.648-.605-.94-.617-.234-.01-.502-.01-.77-.01-.268 0-.704.1-1.072.5-.368.4-1.407 1.378-1.407 3.36 0 1.98 1.44 3.896 1.64 4.168.2.27 2.83 4.324 6.858 6.066.958.414 1.706.662 2.29.847 1.01.32 1.93.275 2.657.168.812-.12 2.502-1.023 2.85-2.01.348-.988.348-1.834.243-2.01-.105-.177-.388-.277-.69-.427z"/>
+        </svg>
+    </a>
+
+    <!-- Main Logic Script -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -164,20 +164,31 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    height: 90px;
     z-index: 1000;
     background-color: var(--glass-bg);
     backdrop-filter: var(--glass-blur);
     border-bottom: 1px solid var(--border-color);
     transition: var(--transition-smooth);
+    display: flex;
+    align-items: center;
+}
+
+.header.scrolled {
+    height: 75px;
+    background-color: rgba(10, 25, 47, 0.95);
+    box-shadow: 0 4px 20px rgba(2, 12, 27, 0.4);
 }
 
 .header-container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px 24px;
+    padding: 0 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 /* Logo brand mark */
@@ -186,6 +197,7 @@ body {
     align-items: center;
     text-decoration: none;
     color: var(--text-primary);
+    height: 100%;
 }
 
 .logo-img {
@@ -193,10 +205,21 @@ body {
     width: auto;
     object-fit: contain;
     transition: var(--transition-smooth);
+    transform: translateY(10px);
+    transform-origin: left center;
+}
+
+.header.scrolled .logo-img {
+    height: 100px;
+    transform: translateY(8px);
 }
 
 .logo:hover .logo-img {
-    transform: scale(1.05);
+    transform: translateY(10px) scale(1.03);
+}
+
+.header.scrolled .logo:hover .logo-img {
+    transform: translateY(8px) scale(1.03);
 }
 
 /* Navigation Links */
@@ -1366,8 +1389,26 @@ body {
 }
 
 @media (max-width: 768px) {
+    .header {
+        height: 75px;
+    }
+
+    .header.scrolled {
+        height: 75px;
+    }
+
     .logo-img {
-        height: 80px;
+        height: 100px;
+        transform: translateY(8px);
+    }
+
+    .header.scrolled .logo-img {
+        height: 100px;
+        transform: translateY(8px);
+    }
+
+    .logo:hover .logo-img, .header.scrolled .logo:hover .logo-img {
+        transform: translateY(8px) scale(1.03);
     }
 
     .section-container {
@@ -1401,10 +1442,10 @@ body {
     
     .nav-menu {
         position: fixed;
-        top: 78px;
+        top: 75px;
         left: -100%;
         width: 100%;
-        height: calc(100vh - 78px);
+        height: calc(100vh - 75px);
         background-color: var(--bg-primary);
         flex-direction: column;
         padding: 50px 30px;

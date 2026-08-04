@@ -189,7 +189,7 @@ body {
 }
 
 .logo-img {
-    height: 48px;
+    height: 64px;
     width: auto;
     object-fit: contain;
     transition: var(--transition-smooth);
@@ -1366,6 +1366,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .logo-img {
+        height: 50px;
+    }
+
     .section-container {
         padding: 60px 20px;
     }

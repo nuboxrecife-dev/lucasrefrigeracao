@@ -164,7 +164,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 90px;
+    height: 120px;
     z-index: 1000;
     background-color: var(--glass-bg);
     backdrop-filter: var(--glass-blur);
@@ -175,7 +175,7 @@ body {
 }
 
 .header.scrolled {
-    height: 75px;
+    height: 90px;
     background-color: rgba(10, 25, 47, 0.95);
     box-shadow: 0 4px 20px rgba(2, 12, 27, 0.4);
 }
@@ -201,25 +201,18 @@ body {
 }
 
 .logo-img {
-    height: 120px;
+    height: 100px;
     width: auto;
     object-fit: contain;
     transition: var(--transition-smooth);
-    transform: translateY(10px);
-    transform-origin: left center;
 }
 
 .header.scrolled .logo-img {
-    height: 100px;
-    transform: translateY(8px);
+    height: 75px;
 }
 
 .logo:hover .logo-img {
-    transform: translateY(10px) scale(1.03);
-}
-
-.header.scrolled .logo:hover .logo-img {
-    transform: translateY(8px) scale(1.03);
+    transform: scale(1.03);
 }
 
 /* Navigation Links */
@@ -286,7 +279,7 @@ body {
 /* Hero Section Styles */
 .hero-section {
     position: relative;
-    padding-top: 140px;
+    padding-top: 170px;
     padding-bottom: 80px;
     overflow: hidden;
 }
@@ -1390,31 +1383,35 @@ body {
 
 @media (max-width: 768px) {
     .header {
-        height: 75px;
+        height: 90px;
     }
 
     .header.scrolled {
-        height: 75px;
+        height: 90px;
     }
 
     .logo-img {
-        height: 100px;
-        transform: translateY(8px);
+        height: 75px;
+        transform: none;
     }
 
     .header.scrolled .logo-img {
-        height: 100px;
-        transform: translateY(8px);
+        height: 75px;
+        transform: none;
     }
 
     .logo:hover .logo-img, .header.scrolled .logo:hover .logo-img {
-        transform: translateY(8px) scale(1.03);
+        transform: scale(1.03);
     }
 
     .section-container {
         padding: 60px 20px;
     }
     
+    .hero-section {
+        padding-top: 120px;
+    }
+
     .hero-content h1 {
         font-size: 2.3rem;
     }
@@ -1442,10 +1439,10 @@ body {
     
     .nav-menu {
         position: fixed;
-        top: 75px;
+        top: 90px;
         left: -100%;
         width: 100%;
-        height: calc(100vh - 75px);
+        height: calc(100vh - 90px);
         background-color: var(--bg-primary);
         flex-direction: column;
         padding: 50px 30px;

@@ -455,4 +455,46 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // ==========================================
+    // 6. WHATSAPP INTERACTIVE POPUP LOGIC
+    // ==========================================
+    const waPopup = document.getElementById('waPopup');
+    const closeWaPopup = document.getElementById('closeWaPopup');
+    const waFloatBtn = document.getElementById('waFloatBtn');
+
+    if (waPopup && closeWaPopup) {
+        // Exibir o popup após 4 segundos
+        setTimeout(() => {
+            // Verificar se o usuário já fechou o popup nesta sessão
+            if (!sessionStorage.getItem('waPopupClosed')) {
+                waPopup.classList.add('show');
+            }
+        }, 4000);
+
+        // Fechar o popup ao clicar no botão "x"
+        closeWaPopup.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            waPopup.classList.remove('show');
+            sessionStorage.setItem('waPopupClosed', 'true');
+        });
+
+        // Fechar o popup ao clicar no botão de iniciar conversa
+        const btnWaPopup = waPopup.querySelector('.btn-wa-popup');
+        if (btnWaPopup) {
+            btnWaPopup.addEventListener('click', () => {
+                waPopup.classList.remove('show');
+                sessionStorage.setItem('waPopupClosed', 'true');
+            });
+        }
+
+        // Se o usuário clicar no próprio botão flutuante, fecha o popup também
+        if (waFloatBtn) {
+            waFloatBtn.addEventListener('click', () => {
+                waPopup.classList.remove('show');
+                sessionStorage.setItem('waPopupClosed', 'true');
+            });
+        }
+    }
+
 });

@@ -66,9 +66,7 @@
                         Agendar Atendimento
                     </a>
                     <a href="https://wa.me/5511961778917" target="_blank" class="btn btn-secondary">
-                        <svg class="btn-icon color-whatsapp" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.456L0 24zm5.835-3.266c1.62.96 3.21 1.46 4.937 1.465 5.4 0 9.794-4.386 9.797-9.789.002-2.618-1.012-5.08-2.859-6.93C15.878 3.63 13.415 2.612 10.8 2.613c-5.4 0-9.796 4.388-9.8 9.792-.001 1.83.498 3.62 1.448 5.178l-.988 3.613 3.732-.977zm11.758-6.868c-.302-.15-.1.44-.752-.777-.315-.559-.648-.605-.94-.617-.234-.01-.502-.01-.77-.01-.268 0-.704.1-1.072.5-.368.4-1.407 1.378-1.407 3.36 0 1.98 1.44 3.896 1.64 4.168.2.27 2.83 4.324 6.858 6.066.958.414 1.706.662 2.29.847 1.01.32 1.93.275 2.657.168.812-.12 2.502-1.023 2.85-2.01.348-.988.348-1.834.243-2.01-.105-.177-.388-.277-.69-.427z"/>
-                        </svg>
+                        <img src="assets/whatsapp.png" alt="WhatsApp Logo" class="btn-icon">
                         Falar no WhatsApp
                     </a>
                 </div>
@@ -80,7 +78,7 @@
                         <span class="stat-label">Garantia Estética</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">Mogi/SP</span>
+                        <span class="stat-number">Suzano - SP</span>
                         <span class="stat-label">Atendimento Local</span>
                     </div>
                     <div class="stat-item">
@@ -95,7 +93,7 @@
                 <div class="slider-wrapper" id="sliderWrapper">
                     <!-- Slide 1 -->
                     <div class="slide active">
-                        <img src="assets/slide_living_room.png" alt="Sala de estar climatizada pela Lucas Refrigeração">
+                        <img src="assets/slide_living_room.jpg" alt="Sala de estar climatizada pela Lucas Refrigeração">
                         <div class="slide-caption">
                             <h3>Conforto Térmico</h3>
                             <p>Instalações impecáveis que valorizam o seu ambiente doméstico.</p>
@@ -103,7 +101,7 @@
                     </div>
                     <!-- Slide 2 -->
                     <div class="slide">
-                        <img src="assets/slide_technician.png" alt="Técnico higienizando ar-condicionado">
+                        <img src="assets/slide_technician.jpg" alt="Técnico higienizando ar-condicionado">
                         <div class="slide-caption">
                             <h3>Saúde & Proteção</h3>
                             <p>Higienização profunda eliminando 99.9% de fungos e bactérias.</p>
@@ -111,7 +109,7 @@
                     </div>
                     <!-- Slide 3 -->
                     <div class="slide">
-                        <img src="assets/slide_office.png" alt="Escritório corporativo climatizado">
+                        <img src="assets/slide_office.jpg" alt="Escritório corporativo climatizado">
                         <div class="slide-caption">
                             <h3>Eficiência Comercial</h3>
                             <p>Manutenções preventivas e PMOC de acordo com as normas da ANVISA.</p>
@@ -660,11 +658,32 @@
         </div>
     </footer>
 
+    <!-- WhatsApp Interactive Popup -->
+    <div class="wa-popup" id="waPopup">
+        <button class="wa-popup-close" id="closeWaPopup" aria-label="Fechar">&times;</button>
+        <div class="wa-popup-header">
+            <div class="wa-avatar">
+                <img src="assets/logooficial.png" alt="Lucas Refrigeração Logo">
+                <span class="wa-status-dot"></span>
+            </div>
+            <div class="wa-header-info">
+                <h5>Lucas Refrigeração</h5>
+                <span class="wa-status-text">Online</span>
+            </div>
+        </div>
+        <div class="wa-popup-body">
+            <p>Olá! ❄️ Evite surpresas com seu ar-condicionado. Precisa de instalação, higienização profunda ou manutenção rápida?</p>
+        </div>
+        <div class="wa-popup-footer">
+            <a href="https://wa.me/5511961778917" target="_blank" class="btn btn-primary btn-wa-popup">
+                Iniciar Conversa
+            </a>
+        </div>
+    </div>
+
     <!-- Floating Pulse WhatsApp Button -->
-    <a href="https://wa.me/5511961778917" target="_blank" class="whatsapp-float" aria-label="Falar no WhatsApp">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.456L0 24zm5.835-3.266c1.62.96 3.21 1.46 4.937 1.465 5.4 0 9.794-4.386 9.797-9.789.002-2.618-1.012-5.08-2.859-6.93C15.878 3.63 13.415 2.612 10.8 2.613c-5.4 0-9.796 4.388-9.8 9.792-.001 1.83.498 3.62 1.448 5.178l-.988 3.613 3.732-.977zm11.758-6.868c-.302-.15-.1.44-.752-.777-.315-.559-.648-.605-.94-.617-.234-.01-.502-.01-.77-.01-.268 0-.704.1-1.072.5-.368.4-1.407 1.378-1.407 3.36 0 1.98 1.44 3.896 1.64 4.168.2.27 2.83 4.324 6.858 6.066.958.414 1.706.662 2.29.847 1.01.32 1.93.275 2.657.168.812-.12 2.502-1.023 2.85-2.01.348-.988.348-1.834.243-2.01-.105-.177-.388-.277-.69-.427z"/>
-        </svg>
+    <a href="https://wa.me/5511961778917" target="_blank" class="whatsapp-float" aria-label="Falar no WhatsApp" id="waFloatBtn">
+        <img src="assets/whatsapp.png" alt="WhatsApp Logo">
     </a>
 
     <!-- Main Logic Script -->
